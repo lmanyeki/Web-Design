@@ -18,14 +18,3 @@ body{
     text-decoration: none;
 
 }
-button{
-    padding: 1px;
-    border-radius: 1px;
-    box-shadow: 2px 2px 2px 1px rgb(131, 131, 219) ;
-    border: 1px solid gray;
-    font-size: 15px;
-   }
-button:hover{
-    background-color: rgb(14, 77, 214);
-    color: rgb(241, 244, 247);
-   }
