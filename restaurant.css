@@ -1,44 +1,17 @@
-body {
-    width: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    background-color: wheat;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-h1{
-    font-family: chaucer;
-    font-size: 80px;
-    color:rgb(248, 247, 247);
-    text-align: center;   
-}
 .navbar {
     margin-bottom: 20px;
     width: 100%;
     height: auto;
-    position: fixed;
-    left: 0;
-    top: 0;
+    text-align: right;
     display: inline-block;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.541);
+    background-color: transparent;
+    
 }
 .navbar a {
     text-decoration: none;
-    color: white;
-}
-
-img {
-    margin: 10px;
-}
-i {
-    font-size: 20px;
-}
-i:hover,
-a:hover {
-    color: dodgerblue;
-    cursor: pointer;
+    color: #fff; 
+    font-weight: bold;
 }
 .navbar nav li {
     padding: 10px;
@@ -46,42 +19,148 @@ a:hover {
     list-style-type: none;
     display: inline-block;
 }
-#hammenu {
-    visibility: hidden;
-}
-.header {
-    width: 80%;
-    height: auto;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    display: grid;
-    grid-template-rows: 1fr;
-}
-.header>div {
-    margin-top: 10%;
-    max-width: 100%;
-
-}
-.intromsg {
-    margin: 20px;
+.navbar nav img{
     position: relative;
-    width: 100%;
-    left: 5%;
-    top: -20%;
+    left: -400px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.wine-info p{
+    font-size: 30px;
+    font-family: chaucer;
+    color: goldenrod;
     text-align: center;
-    padding: 10px;
-    height: auto;
-    opacity: 0.9;
-    background-color: transparent;
-    border-radius: 10px;
+}
+.wine-info .info{
+    font-size: 20px;
+    font-family: chaucer;
+    color: #fff;
+    text-align: center;
 
 }
-.logo {
-    display:block;
-    animation: windowsFly ease-out 3s;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 4px rgb(255, 255, 255), 0.3em 0.3em 4em rgba(0, 0, 0, 0.3);
-    margin-left: auto;
-    margin-right: auto;
+.reservations{
+    text-align: center;
+    font-family: chaucer;
+    color: aliceblue;
+    font-size: 20px;
+    margin: 0;
+}
+button{
+    background-color: goldenrod;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover{
+    background-color: #765987;
+    color:aliceblue;
 
+}
+.info{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: chaucer;
+}
+.follow-us{
+    text-align: center;
+    text-transform: capitalize;
+    color: goldenrod;
+    font-family: chaucer;
+}
+.social-icons{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-icons li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.social-icons li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #111;
+}
+.social-icons li a:hover{
+    background-color: #666;
+}
+.social-icons li a i{
+    font-size: 20px;
+}
+.flex-container{
+    background-image: url(dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #111;
+    display: flex;
+    grid-gap: 300px;                 
+
+} 
+.reach{
+    text-align: left;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: chaucer;
+}     
+.flex nav
+{
+    color: aliceblue;
+    font-size: 20px;
+}
+.socialIcon{
+    color:aliceblue;
+}
+i{
+    color: aliceblue;
+}
+.location{
+    color: aliceblue;
+    font-family: chaucer;
+    font-size: 20px;
+
+}
+.hours{
+    color: aliceblue;
+    font-family: chaucer;
+    font-size: 20px;
+}
+.links{
+    color: aliceblue;
+    font-family: chaucer;
+    font-size: 20px;
+}
+.links a{
+    color: aliceblue;
+}
+.jus-links:hover{
+    color: goldenrod;
+}
+.dropdown-content a:hover{
+    color: goldenrod;
 }

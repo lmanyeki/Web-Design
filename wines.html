@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wines-Habesha</title>
+    <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <style>
+        .body{
+            
+            background-image: url(wine1.jpeg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+        }
+        .flex-container{
+            background-image: url(dark.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #111;
+            display: flex;
+            grid-gap: 300px;                 
+
+        } 
+        .reach{
+            text-align: left;
+            color: aliceblue;
+            font-size: 20px;
+            font-family: chaucer;
+        }     
+        .flex nav
+        {
+            color: aliceblue;
+            font-size: 20px;
+        }
+        .socialIcon{
+            color:aliceblue;
+        }
+        i{
+            color: aliceblue;
+        }
+        .location{
+            color: aliceblue;
+            font-family: chaucer;
+            font-size: 20px;
+
+        }
+        .hours{
+            color: aliceblue;
+            font-family: chaucer;
+            font-size: 20px;
+        }
+        .links{
+            color: aliceblue;
+            font-family: chaucer;
+            font-size: 20px;
+        }
+        .links a{
+            color: aliceblue;
+        }
+        .jus-links:hover{
+            color: goldenrod;
+        }
+        .wine-list{
+            display: flex;
+            color: #fff;
+            justify-content: space-between;
+            font-family: chaucer;
+        }
+        .wine-list1{
+            justify-content: flex-start;
+        }
+        .wine-list2{
+            justify-content: flex-end;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="navbar"><nav>
+            <i class="justify" onclick="alert('hello')" id="hamMenu"></i>
+            <ul>
+                <img src="logo.png" alt="logo" height="5%" width="5%"/>
+                <li><a class="jus-links" href="index2.html" >HOME </a></li>
+                <li class="dropdown"><a class="jus-links" href="#">MENU </a>
+                    <div class="dropdown-content">
+                    <a href="food.html">FOOD</a>
+                    <a href="dessert-&-drinks.html">DESSERT & DRINKS</a>
+                    <a href="wines.html">WINES</a>
+                    </div>
+                </li>
+                <li><a class="jus-links" href="reservations.html">RESERVATIONS</a> </li>
+                <li><a class="jus-links" href="aboutus.html">ABOUT US</a></li>
+                <li><a class="jus-links" href="contact2.html">CONTACT US </a></li>
+                <li><a class="jus-links" href="giftvouchers.html">GIFT VOUCHERS</a> </li>
+            </ul>
+        </nav>
+        </div>
+        <div class="wine-info">
+            <br><p>Wine to me is passion. It's family and friends.<br> It's warmth of heart and generosity of spirit.<br> Wine is art.</p><br>
+            <p class="info">A handpicked collection of old and new world wines, the wine selection at Habesha is one of the most extensive in the region.<br> The temperature-controlled cellar means that wines are always served at the perfect temperature and our experienced Sommelier is on hand to help enhance your dining experience.</p>
+        </div>
+        <div class="wine-list">
+            <div class="wine-list1">
+              <h3 id="reds">Red Wines</h3>
+              <div class="wine-item">
+                <h4>Merlot</h4>
+                <p>A smooth, medium-bodied wine with notes of black cherry and plum.</p>
+                <p>KES 750 per glass / KES 3000 per bottle</p>
+              </div>
+              <div class="wine-item">
+                <h4>Cabernet Sauvignon</h4>
+                <p>A full-bodied wine with bold flavors of blackberry, currant, and oak.</p>
+                <p>KES 800 per glass / KES 3500 per bottle</p>
+              </div>
+              <h3 id="whites">White Wines</h3>
+              <div class="wine-item">
+                <h4>Chardonnay</h4>
+                <p>A rich, buttery wine with notes of vanilla and oak.</p>
+                <p>KES 500 per glass / KES 2700 per bottle</p>
+              </div>
+              <div class="wine-item">
+                <h4>Sauvignon Blanc</h4>
+                <p>A crisp, refreshing wine with flavors of citrus and green apple.</p>
+                <p>KES 850 per glass / KES 4000 per bottle</p>
+              </div>
+              <h3 id="roses">Rosé Wines</h3>
+              <div class="wine-item">
+                <h4>Pinot Noir Rosé</h4>
+                <p>A delicate pink wine with subtle aromas of red berry fruits.</p>
+                <p>KES 850 per glass / KES 4200 per bottle</p>
+              </div>
+              <div class="wine-item">
+                <h4>Filipetti Moscato Rosé</h4>
+                <p>Alightly sweet wine with bright flavours of red berries and apples.</p>
+                <p>KES 500 per glass / KES 2500 per bottle</p>
+              </div>
+            </div>
+            <div class="wine-list2">
+                <h3 id="reds">Red Wines</h3>
+                <div class="wine-item">
+                  <h4>Malbec</h4>
+                  <p>A smoky, full-bodied wine with notes of blackberry, chocolate and plum.</p>
+                  <p>KES 850 per glass / KES 4000 per bottle</p>
+                </div>
+                <div class="wine-item">
+                  <h4>Syrah</h4>
+                  <p>A full-bodied wine with a spicy, peppery flavor profile.</p>
+                  <p>KES 750 per glass / KES 3000 per bottle</p>
+                </div>
+                <h3 id="whites">White Wines</h3>
+                <div class="wine-item">
+                  <h4>Pinot Grigio</h4>
+                  <p>A light-bodied wine with a delicate, fruity flavor profile.</p>
+                  <p>KES 700 per glass / KES 3000 per bottle</p>
+                </div>
+                <div class="wine-item">
+                  <h4>Moscato</h4>
+                  <p>A sweet, fruity white wine with a flavor profile including peaches, apricot and honey.</p>
+                  <p>KES 800 per glass / KES 4000 per bottle</p>
+                </div>
+                <h3 id="roses">Rosé Wines</h3>
+                <div class="wine-item">
+                  <h4>Grenache</h4>
+                  <p>A medium-bodied wine with a dry, crisp flavor.</p>
+                  <p>KES 1500 per glass / KES 6500 per bottle</p>
+                </div>
+                <div class="wine-item">
+                  <h4>White Zinfandel</h4>
+                  <p>A light-bodied wine with a sweet, fruity flavor.</p>
+                  <p>KES 850 per glass / KES 4500 per bottle</p>
+                </div>
+            </div>
+        </div>             
+    <div class="flex-container">
+        <div class="reach">
+            <img src="logo.png" alt="logo" height="15%" width="100%" />
+            <p>You're home.</p>
+            <ul>
+                <li class="socialIcon"><a href="call:0712-345-678" href="call:0734-125-768"><i class="bi bi-telephone-forward"></i></a></li>
+                <li class="socialIcon"><a href="instgram.com/example"><i class="bi bi-instagram"></i></a></li>
+                <li class="socialIcon"><a href="#"><i class="bi bi-facebook"></i> </a></li>
+                <li class="socialIcon"><a href="#"><i class="bi bi-twitter"></i> </a></li>
+                <li class="socialIcon"><a href="habeshafoods@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
+            </ul>
+        </div>
+        <div class="location">
+            <p><h2>KILIMANI</h2>
+            Kilimani Road,<br>Off Elgeyo Marakwet Road Elysse Plaza<br>Kilimani, Nairobi.</p><br>
+            <p><h2>LAVINGTON</h2>Muthangari Gardens near Valley Arcade,<br>Off Gitanga Road,<br>Lavington, Nairobi.</p><br>
+        </div>
+        <div class="links">
+            <p><h2>Quick Links</h2></p>
+                <nav>
+                    <i class="justify" onclick="alert('hello')" id="hamMenu"></i>
+                    <ul >
+                        <li><a class="jus-links" href="index2.html" >HOME </a></li>
+                        <li><a class="jus-links" href="reservations.html">RESERVATIONS</a> </li>
+                        <li><a class="jus-links" href="aboutus.html">ABOUT US</a></li>
+                        <li><a class="jus-links" href="contact2.html">CONTACT US </a></li>
+                        <li><a class="jus-links" href="giftvouchers.html">GIFT VOUCHERS</a> </li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="hours">
+            <p><h2>Opening Hours</h2></p>
+            <text>Monday to Sunday<br><time>09.00</time>AM-<time>11.00</time>PM</text>
+        </div>
+    </div>
+</body>
+</html>

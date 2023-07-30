@@ -9,6 +9,9 @@
     <style>
         .body{
             background-color: #111;
+            background-image: url(food1.jpg);
+            background-repeat: no-repeat;
+            background-size:contain;
             
         }
         .contact h1{
@@ -29,11 +32,13 @@
             text-align: right;
             display: inline-block;
             z-index: 1;
-            background-color: #0e0d0d;
+            background-color: transparent;
+            
         }
         .navbar a {
             text-decoration: none;
-            color: white; 
+            color: #fff; 
+            font-weight: bold;
         }
         .navbar nav li {
             padding: 10px;
@@ -44,6 +49,20 @@
         .navbar nav img{
             position: relative;
             left: -400px;
+        }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
         }
         input{
             margin-top: 8px;
@@ -74,7 +93,9 @@
             background-color: #765987;
         }
         .flex-container{
-            background-image: url(tabletop.jpg);
+            background-image: url(dark.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             background-color: #111;
             display: flex;
             grid-gap: 300px;                 
@@ -119,7 +140,9 @@
         .jus-links:hover{
             color: goldenrod;
         }
-        
+        .dropdown-content a:hover{
+            color: goldenrod;
+        }
         nav
         {
             color: aliceblue;
@@ -151,7 +174,7 @@
             display: block;
             width: 40px;
             height: 40px;
-            line-height: 45px;
+            line-height: 46px;
             text-align: center;
             color: #fff;
             border-radius: 50px;
@@ -173,7 +196,13 @@
             <ul>
                 <img src="logo.png" alt="logo" height="5%" width="5%"/>
                 <li><a class="jus-links" href="index2.html" >HOME </a></li>
-                <li><a class="jus-links" href="menu.html">MENU </a></li>
+                <li class="dropdown"><a class="jus-links" href="#">MENU </a>
+                    <div class="dropdown-content">
+                    <a href="food.html">FOOD</a>
+                    <a href="dessert-&-drinks.html">DESSERT & DRINKS</a>
+                    <a href="wines.html">WINES</a>
+                    </div>
+                </li>
                 <li><a class="jus-links" href="reservations.html">RESERVATIONS</a> </li>
                 <li><a class="jus-links" href="aboutus.html">ABOUT US</a></li>
                 <li><a class="jus-links" href="contact2.html">CONTACT US </a></li>
@@ -225,7 +254,6 @@
                         <i class="justify" onclick="alert('hello')" id="hamMenu"></i>
                         <ul >
                             <li><a class="jus-links" href="index2.html" >HOME </a></li>
-                            <li><a class="jus-links" href="menu.html">MENU </a></li>
                             <li><a class="jus-links" href="reservations.html">RESERVATIONS</a> </li>
                             <li><a class="jus-links" href="aboutus.html">ABOUT US</a></li>
                             <li><a class="jus-links" href="contact2.html">CONTACT US </a></li>
